@@ -1,0 +1,31 @@
+
+1 ¿Qué secciones identifica dentro del código?
+Header Y Body
+2 ¿Qué tipo de errores? Cada persona del equipo debe indicar al menos dos
+ideas y una posible solución
+
+E:no se define que tipo de documento es, osea el doctype
+S: agregar doctype 
+E: el atributo lang debe estar en minusculas
+S: cambiar a minusculas
+E:esta duplicada la instruccion del tipo de codificacon que tendra la pagina
+S:eliminar duplicidad
+E: la referencia a la hoja de estilo no esta completa
+S:completar bien la ruta de referencia o en este caso borrarla ya que no existe.
+E:no se encuentra la etiqueta tittle
+S:agregar Titulo de pagina
+E:no esta cerrado el primer parrafo
+S:Cerrar  el primer parrafo con </p>
+E:los tags deben estar en minusculas
+S:cambiar a minusculas
+E:lo id deben ser unicos y entre comillas dobles
+S:cambiar nombre de los ID y cambiar las comillas
+E:hay algunos caracteres especiales que son propios del codigo
+S:cambiar caracteres que probocan conflicto
+
+
+3 ¿Es posible dar solución a todos los errores detectados? De existir alguno sin
+solución, consultelo con su Awaker.
+
+Si es posible dar solucion a todos
+No debe existir ningun error.

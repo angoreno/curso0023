@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="ejercicio19.css">
+    <script src="ejercicio19.js"></script>
+</head>
+<body>
+    <div class="principal">
+        <div>
+            <h1>Calculadora</h1>
+        </div>
+
+        <div >
+            <table class="contenedor">
+                
+                <tr>
+                    <td colspan="4" class="pantalla" ><button id="result">0</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add('7')">7</button></td>
+                    <td><button onclick="add('8')">8</button></td>
+                    <td><button onclick="add('9')">9</button></td>
+                    <td><button onclick="add('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add('4')">4</button></td>
+                    <td><button onclick="add('5')">5</button></td>
+                    <td><button onclick="add('6')">6</button></td>
+                    <td><button onclick="add('*')">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add('1')">1</button></td>
+                    <td><button onclick="add('2')">2</button></td>
+                    <td><button onclick="add('3')">3</button></td>
+                    <td><button onclick="add('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="add('.')">.</button></td>
+                    <td colspan="2"><button onclick="add('0')">0</button></td>
+                    <td><button onclick="add('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="ac" onclick="del()"><b>C</b></button></td>
+                    <td colspan="3"><button onclick="calc()"><b>=</b></button></td>
+                    
+                </tr>
+            </table>    
+
+        </div>
+
+    
+        
+    </div>
+</body>
+</html>

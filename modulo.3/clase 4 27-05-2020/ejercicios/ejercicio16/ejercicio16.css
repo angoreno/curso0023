@@ -1,0 +1,31 @@
+
+body{
+    display: flex;
+}
+.contenedor{
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    width: 60%;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.principal{
+    background-color: #0cb1bf;
+    padding: 10px;
+}
+.header{
+    display: flex;
+}
+.nombre{
+    margin-left: 40px;
+    width: 100%;
+}
+.titulo{
+    border: 1px solid #0cb1bf;
+    color: #0cb1bf;
+}
+@media screen and (max-width: 800px){
+    img{
+        display: none;
+    }
+}

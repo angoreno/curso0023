@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 21</title>
+    
+    
+</head>
+<body>
+    <div class="contenedor">
+        
+            <textarea type="text" id="frase" name="frase" cols="30" rows="10"></textarea>    
+            <input type="submit" onclick="leerFrase(frase)">
+            <p id="contenedor"></p>
+        
+        
+    </div>
+    
+    <!--Aqui va el Scripttttt.....-->
+    <script type="text/javascript">
+        function leerFrase(value){
+
+            var largoFrase = value.value;
+
+            /***** muesta el tamaño de la frase sin contar los espacios *****/
+            var largo = largoFrase.replace( /\s/g, '' ).length;
+            //alert(largo);
+
+            /***** almacena la frase en un arreglo *****/
+            var arrPalabras = largoFrase.split(" ");
+
+            /***** muestra el tamaño del arreglo*****/
+            numPalabras = arrPalabras.length;
+            //alert(numPalabras);
+
+            /***** muestra la primera palabra*****/
+            //alert(arrPalabras[0]);
+
+            /***** muestra la ultima palabra*****/
+            //alert(arrPalabras[arrPalabras.length-1]);
+
+            /***** arreglo alrreves *****/
+            var arrayAtras = arrPalabras.reverse();
+            //alert( arrayAtras);
+
+            /***** frese alrreves sin espacion *****/
+            largoSinEspacio=largoFrase.replace( /\s/g, '' );
+            //alert(invertString(largoSinEspacio));
+
+            var resultado= "El largo de la palabra es " + largo +'<br />'+  "la cantidad de palabras es " + numPalabras +'<br />'+ "La primera palabras es " + arrPalabras[0] +'<br />'+
+            "la última palabra es " + (arrPalabras[arrPalabras.length-1]) +'<br />'+ "El texto ingresado al revés es " + arrayAtras +'<br />'+ 
+            "y el texto invertido descartando los espacios sería " + (invertString(largoSinEspacio));
+
+            document.getElementById("contenedor").innerHTML = resultado;
+
+        }
+
+        function invertString(cadena){
+
+            var lar = cadena.length;
+            var larAtras ="";
+
+            while(lar >= 0){
+                larAtras = larAtras + cadena.charAt(lar);
+                lar--;
+            }
+            return larAtras;
+        }
+    </script>
+    
+    
+</body>
+</html>

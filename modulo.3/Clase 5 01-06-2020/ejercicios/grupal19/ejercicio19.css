@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+table {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    height: 60px;
+    font-size: 150%;
+    background-color: lightgrey;
+  }
+  .ac {
+    color: red;
+  }
+ 

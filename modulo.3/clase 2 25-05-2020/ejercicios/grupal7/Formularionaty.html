@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO</title>
+</head>
+
+<body align="center">
+    <h1><strong>Formulario de registro</strong></h1>
+    <form action="recibedatos.html" method= "GET">
+        <p> Nombre <input type="text" name="nombre" required></p>
+        <p> Apellido <input type="text" name="apellido" required></p>
+        <p> RUN <input type="text" name="run" required></p>
+        <p> Edad <input type="text" name="edad" required></p>
+        <p><label for="estadocivil">Estado Civil: </label>
+            <select name="civil" id="estadocivil" required>
+                <option value="soltero">soltero</option>
+                <option value="casado">casado</option>
+                <option value="viudo">viudo</option>
+            </select></p>
+        <p>Sexo
+            <label> Hombre</label>
+            <input type="radio" id="hombre" name="sexo" value="hombre" checked>
+            <label> Mujer</label>
+            <input type="radio" id="Mujer" name="sexo" value="Mujer"></p>
+        <p>Medio de transporte
+            <label><input type="checkbox" name="auto" id="auto" value="auto">auto</label>
+            <label><input type="checkbox" name="moto" id="moto" value="moto">moto</label>
+            <label><input type="checkbox" name="micro" id="micro" value="micro">micro</label>
+            <label><input type="checkbox" name="metro" id="metro" value="metro">metro</label>
+            <label><input type="checkbox" name="taxi" id="taxi" value="taxi">taxi</label>
+        </p>
+
+        <p><button type="submit">Enviar</button></p>
+
+
+
+    </form>
+
+</body>
+
+</html>

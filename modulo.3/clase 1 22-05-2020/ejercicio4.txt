@@ -1,0 +1,84 @@
+1. Cambie el color de fondo al pie de pagina.
+dentro de :
+
+#footer {
+    background: #0e0e0e;
+    border-top: 4px solid #0e0e0e;
+    font-size: 0.9em;
+    margin-top: 50px;
+    padding: 70px 0 0;
+    position: relative;
+    clear: both;
+}
+
+cambiar por
+
+#footer {
+    background: #0e0e0e;//cambiar de color
+
+2. Modifique los números de teléfono bajo la sección “Contáctanos”.
+cambiar en:
+
+<span class="phone">+ 56 9 7957 1259 <br>+ 56 9 4267 3222</span>
+
+
+por:
+
+<span class="phone">+ 56 x xxxx xxxx <br>+ 56 y yyyy yyyy</span>
+
+3. Cambie la fuente del texto del sitio a un estilo “Courier”.
+
+cambiar
+
+body {
+    background-color: #FFF;
+    color: #777;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+}
+
+por:
+
+body {
+    background-color: #FFF;
+    color: #777;
+    font-family: “Courier”;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+}
+
+4. Cambie el color de letra del texto “Acerca de nosotros”.
+
+cambiar :
+
+html .heading-primary{
+    color: #0088cc !important;
+}
+
+por:
+
+html .heading-primary, html .lnk-primary, html .text-color-primary, html .text-primary {
+    color: #ff00cc !important; // por ejemplo
+}
+5. Modifique el titulo del sitio declarado en la cabecera
+
+cambiar:
+
+<title>Talento Digital</title>
+
+por:
+
+<title>nuevo titulo</title>
+
+6. Al pasar sobre un enlace del menú́ superior, se iluminan los enlaces. ¿Será posible
+modificar dicho color? De ser posible ¿cómo se haría?
+
+si se puede cambiando el codigo desde:
+
+@media (min-width: 992px)
+html #header.header-semi-transparent .header-nav-main nav > ul > li.open > a.active, html #header.header-semi-transparent .header-nav-main nav > ul > li:hover > a.active {
+    color: #FF0000;//color de ejemplo de fff a ff0000;
+}

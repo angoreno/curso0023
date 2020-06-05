@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+</head>
+<body>
+    <div>
+        <h1>El Indefenso Informativo</h1>
+        <div>
+            <section id="menu" class="menu">
+                <ul>
+                    <li><a href="ejercicio10.html">Inicio</a></li>
+                    <li><a href="#">Acerca de</a></li>
+                    <li><a href="formulario.html">Contacto</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="form">        
+        
+        <form action="">
+            <h3 class="tform">Formulario de contacto</h3>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="name">Nombre: </label></td>
+                        <td><input type="text" id="name" name="name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="tel">Telefono: </label></td>
+                        <td><input type="text" id="tel" name="tel"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="correo">Correo: </label></td>
+                        <td><input type="email" id="correo" name="correo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="region">Region: </label></td>
+                        <td>
+                            <select name="region" id="region">
+                                <option value="0">--Seleccionar Region--</option>
+                                <option value="I">I Región de Tarapacá</option>
+                                <option value="II">II Región de Antofagasta</option>
+                                <option value="III">III Región de Atacama</option>
+                                <option value="IV">IV Región de Coquimbo</option>
+                                <option value="V">V Región de Valparaíso</option>
+                                <option value="VI">VI Región del Lib. O'Higgins</option>
+                                <option value="VII">VII Región del Maule</option>
+                                <option value="VIII">VIII Región del Biobío</option>
+                                <option value="IX">IX Región de la Araucanía</option>
+                                <option value="X">X Región de los Lagos</option>
+                                <option value="XI">XI Región de Aysén</option>
+                                <option value="XII">XII Región de Magallanes</option>
+                                <option value="XIII">Región Metropolitana de Santiago</option>
+                                
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="genero">Genero: </label></td>
+                        <td><input type="radio" id="" name="genero">Hombre <input type="radio" id="" name="genero">Mujer</td>
+                    </tr>
+                    <tr>
+                        <td><label for="mensaje">Mensaje: </label></td>
+                        <td><textarea name="mensaje" id="mensaje" cols="70" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="reset"><input type="submit"></td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+        </form>
+    </div>
+    
+</body>
+<footer>
+    <p>Desarrollado por IpC, todos los derechos reservados. 2020</p>
+</footer>
+</html>

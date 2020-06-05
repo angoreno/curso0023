@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estylos.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        window.onload = function(){
+            document.getElementById("bazar").style.background = '#037E8C';
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <p class="h1">Bazar en linea</p>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><span class="icon-list2"></span>Menu</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html"><span class="icon-home3"></span>Inicio</a></li>
+                <li><a href="proyecto1.html" id="bazar"><span class="icon-briefcase"></span>Bazar</a></li>
+                <li><a href="proyecto2.html"><span class="icon-briefcase"></span>Bodega</a></li>
+                <li><a href="proyecto3.html"><span class="icon-briefcase"></span>Estaciona</a></li>
+            </ul>
+        </nav>
+    </header><br>
+    <div class="text-center">
+        <img src="img/bazar.png" class="img-fluid" alt="Responsive image" width="20%" height="auto" >
+    </div><br>
+    <div class="border border-primary">
+        <p class="h3">Problematica</p>
+        <div>
+            <p>Las problematicas vistas son las siguientes a continuacion:</p>
+            <ol>
+                <li>Menos tiempo para realizar la compra.</li>
+                <li>Disponibilidad de producto en almacen.</li>
+                <li>Compra rapida en almacen.</li>
+                <li>Competencia de Precios en almacenes del barrio.</li>
+                <li>No saber las ganancias en cualquier moemento del almacenero.</li>
+                <li>No saber el stock real para mantener un stock sufuciente.</li>
+            </ol>
+        </div>
+    </div><br>
+    <div class="border border-primary">
+        <p class="h3">Desarrollo</p>
+        <div>
+            <p>Para desarrollar el proyecto se necesita un servidor donde almacenar toda la infromacion, programadores y
+                diseñadores, la idea inicial es mantener un registro de los almacenes cerca de la ubicacion del cliente,
+                este al ingresar en la barra de busqueda colocara el nombre del articulo y en el resultado le enviara
+                los datos del articulo, precios y almacenes. las compras se realizaran mediante webpay. Se debe crear el
+                modulo de administracion del ammacenero donde obtendra la infromacion de compras y ventas.</p>
+        </div>
+    </div><br>
+    <div class="border border-primary">
+        <p class="h3">Beneficios</p>
+        <div>
+            <p>Mostra los precios de los almacenes haciendo de esto una sana competencia y beneficio para los clientes,
+                pedidos rapidos de articulos, reparto de pedidos, control de stock en el almacen.</p>
+        </div>
+    </div><br>
+</body>
+<footer>
+    <div class="card-footer footer">
+        <p>Desarrollado por Isaac Pizarro. Todos los derechos Reservados. 2020.</p>
+    </div>
+
+</footer>
+
+</html>

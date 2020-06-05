@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    border: 1px solid red;  
+    text-align: center;   
+}
+h1{
+    margin-top: 100px;
+}
+.row{
+    border: 2px solid red; 
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.contfech{
+    border: 3px double red; 
+    margin-top: 5px;
+    margin-bottom: 15px;
+}

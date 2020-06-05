@@ -1,0 +1,21 @@
+*{
+    margin: 0 auto;
+}
+.contenedor{
+    text-align: center;
+}
+div{
+    margin: auto;
+}
+.error{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 131, 93);
+    color: red;
+}
+.confirm{
+    width: 300px;
+    height: 100px;
+    background-color: rgb(152, 252, 152);
+    color: green;
+}

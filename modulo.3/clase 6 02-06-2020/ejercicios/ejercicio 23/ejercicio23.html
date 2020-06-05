@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 23</title>
+    <link rel="stylesheet" href="ejercicio23.css">
+</head>
+<body>
+    <div class="contenedor">
+        <table id="table" border="5" cellspacing="10">
+            <tr>
+                <td>
+                    <ul id="desorden">
+                        
+                    </ul>
+                </td>
+                <td>
+                    <ol type="I" id="orden">
+                        
+                    </ol>
+                </td>
+                
+            </tr>
+           
+            
+        </table>
+        <div class="form">
+            <br>
+        <input type="text" id="texto" name="texto"><br><br>
+        <input type="radio" name="opcion" id="opcion" value="lista1" onclick="opcion.setAttribute('ID', 'noopcion');this.setAttribute('ID', 'opcion');">Lista 1
+        <input type="radio" name="opcion" id="opcion1" value="lista2" onclick="opcion.setAttribute('ID', 'noopcion');this.setAttribute('ID', 'opcion');">Lista 2
+        <br><br>
+        <input type="submit" value="Enviar" onclick="enviar(opcion,texto);texto.value=''">
+        </div>
+        
+        
+    </div>
+    <script src="ejercicio23.js"></script>
+</body>
+</html>

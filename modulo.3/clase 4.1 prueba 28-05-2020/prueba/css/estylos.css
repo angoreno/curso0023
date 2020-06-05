@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+* {
+	margin:0;
+	padding:0;
+}
+ 
+body {
+	background:#FFFFFA;
+}
+ 
+header {
+	width:100%;
+}
+ 
+header nav {
+	width:90%;
+	max-width:1000px;
+	margin:20px auto;
+	background:#024959;
+}
+.h1{
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+.h3{
+    margin-left: 5%;
+}
+p{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+ol{
+    margin-left: 5%;
+}
+ 
+.menu_bar {
+	display:none;
+}
+.resena{
+    margin-left: 3%;
+}
+ 
+header nav ul {
+	overflow:hidden;
+    list-style:none;
+}
+ 
+header nav ul li {
+	float:left;
+}
+ 
+header nav ul li a {
+	color:#fff;
+	padding:15px;
+	display:block;
+	text-decoration:none;
+}
+ 
+header nav ul li span {
+	margin-right:10px;
+}
+ 
+header nav ul li a:hover {
+    background:#037E8C;
+    color: #fff;
+}
+span{
+    width: 30%;
+    height: 30%;
+}
+.border{
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 11px;
+    border: 10px;
+}
+ 
+@media screen and (max-width:800px ) {
+	header nav {
+		width:35%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+ 
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+ 
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+ 
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+ 
+	.menu_bar span {
+		float:right;
+        font-size:40px;
+        color: #fff;
+	}
+}
+img{
+    max-width: 50%;
+    height: auto;
+}
+footer{
+    background-color: #024959;
+    color:#fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 12px;
+    text-align: center;
+    
+}

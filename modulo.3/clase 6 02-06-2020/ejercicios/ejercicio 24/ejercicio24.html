@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio24</title>
+</head>
+<body>
+
+    <form action="" id="myForm">
+        <p name="pregunta1">El sol que color tiene</p>  
+        <input class="id1" name="pregunta1" type="radio" onclick="sumaPuntaje(0)"> Rojo
+        <input class="id1" name="pregunta1" type="radio" onclick="sumaPuntaje(1)"> Amarillo
+        <input class="id1" name="pregunta1" type="radio" onclick="sumaPuntaje(0)" required> Verde
+
+        <p name="pregunta2">Tangananika o tanganana</p>
+        <input class="id2" name="pregunta2" type="radio" onclick="sumaPuntaje(0)"> Tangananika
+        <input class="id2" name="pregunta2" type="radio" onclick="sumaPuntaje(0)"> Tanganana
+        <input class="id2" name="pregunta2" type="radio" onclick="sumaPuntaje(1)" required> Ninguna
+
+        <p name="pregunta3">Nombre del Presidente de Chile</p>
+        <input class="id3" name="pregunta3" type="radio" onclick="sumaPuntaje(0)"> El cacas
+        <input class="id3" name="pregunta3" type="radio" onclick="sumaPuntaje(0)"> El wiña
+        <input class="id3" name="pregunta3" type="radio" onclick="sumaPuntaje(1)" required> Todas las anteriores
+
+        <p name="pregunta4">La mejor alcandesa de Chile</p>
+        <input class="id4" name="pregunta4" type="radio" onclick="sumaPuntaje(1)"> Katy Barriga
+        <input class="id4" name="pregunta4" type="radio" onclick="sumaPuntaje(0)"> Evelyn Mathei 
+        <input class="id4" name="pregunta4" type="radio" onclick="sumaPuntaje(0)" required> Joaquin Lavín
+
+        <p name="pregunta5">La mejor canción de todos los tiempos</p>
+        <input class="id5" name="pregunta5" type="radio" onclick="sumaPuntaje(0)"> Hotel California-Eagles
+        <input class="id5" name="pregunta5" type="radio" onclick="sumaPuntaje(0)"> The Chain- Fleetwood Mac
+        <input class="id5" name="pregunta5" type="radio" onclick="sumaPuntaje(1)" required> Hakuna Matata- Rey León
+        <br><br>
+    
+        <input id="boton" type="submit" onclick="iniciarResultado();">
+
+    
+    </form>
+
+
+    <script src="ejercicio24consu.js"></script>
+
+    
+</body>
+</html>

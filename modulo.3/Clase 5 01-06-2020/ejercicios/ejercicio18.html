@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 18</title>
+    <script>
+        var acum=0;
+        function numero(){
+
+            var num=document.getElementById("numero").value;
+            acum=acum+parseInt(num);
+
+            document.getElementById('suma').innerHTML = acum;
+        }
+
+    </script>
+</head>
+<body>
+    
+        <label for="numero">Ingrese numero</label><br><br>
+        <input type="text" id="numero"><br><br>
+        <input type="submit" onclick="numero()">
+   <br><br>
+    <div id="suma">
+        
+    </div>
+    
+    
+</body>
+</html>

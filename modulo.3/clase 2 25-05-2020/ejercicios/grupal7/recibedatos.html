@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border: double;
+            border-collapse: collapse;
+            margin:auto;
+        }
+    </style>
+    <script>
+        function getGET(){
+            // capturamos la url
+            var loc = document.location.href;
+            // si existe el interrogante
+            if(loc.indexOf('?')>0)
+            {
+                // cogemos la parte de la url que hay despues del interrogante
+                var getString = loc.split('?')[1];
+                // obtenemos un array con cada clave=valor
+                var GET = getString.split('&');
+                var get = {};
+                // recorremos todo el array de valores
+                for(var i = 0, l = GET.length; i < l; i++){
+                    var tmp = GET[i].split('=');
+                    get[tmp[0]] = unescape(decodeURI(tmp[1]));
+                }
+                return get;
+            }
+        }
+        window.onload = function(){
+            // Cogemos los valores pasados por get
+            var valores=getGET();
+            if(valores)
+            {
+                //recogemos los valores que nos envia la URL en variables para trabajar con ellas
+                var nombre = valores['nombre'];
+                var apellido = valores['apellido'];
+                var run = valores['run'];
+                var edad = valores['edad'];
+                var civil = valores['civil'];
+                var sexo = valores['sexo'];
+                var auto = valores['auto'];
+                var moto = valores['moto'];
+                var micro = valores['micro'];
+                var metro = valores['metro'];
+                var taxi = valores['taxi'];
+                var locomocion="";
+
+                if(auto){
+                    locomocion=auto;
+                }
+                if(moto){
+                    locomocion=locomocion + " "+moto;
+                }
+                if(micro){
+                    locomocion=locomocion + " "+micro;
+                }
+                if(metro){
+                    locomocion=locomocion + " "+metro;
+                }
+                if(taxi){
+                    locomocion=locomocion + " "+taxi;
+                }
+
+
+    
+            }else{
+                    // no se ha recibido ningun parametro por GET
+                    document.write("No se ha recibido ningún parámetro");
+                }
+            
+                document.getElementById('nombre').innerHTML = nombre;
+                document.getElementById('apellido').innerHTML = apellido;
+                document.getElementById('run').innerHTML = run;
+                document.getElementById('edad').innerHTML = edad;
+                document.getElementById('civil').innerHTML = civil;
+                document.getElementById('sexo').innerHTML = sexo;
+                document.getElementById('locomocion').innerHTML = locomocion;
+
+
+        }
+    </script>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th>Dato</th>
+            <th>Informacion</th>
+        </tr>
+        <tr>
+            <td>Nombre</td>
+            <td ><label id="nombre"></label></td>
+        </tr>
+        <tr>
+            <td>Apellido</td>
+            <td><label id="apellido"></label></td>
+        </tr>
+        <tr>
+            <td>Run</td>
+            <td><label id="run"></label></td>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td><label id="edad"></label></td>
+        </tr>
+        <tr>
+            <td>Estado Civil</td>
+            <td><label id="civil"></label></td>
+        </tr>
+        <tr>
+            <td>Sexo</td>
+            <td><label id="sexo"></label></td>
+        </tr>
+        <tr>
+            <td>Medio de Locomocion</td>
+            <td><label id="locomocion"></label></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        table{
+            
+            margin:auto;
+        }
+        button{
+            margin: 0 auto;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+    <form action="recibedatos.html" method="GET">
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre:</label></td>
+                    <td><input type="text" id="nombre" name="nombre"></td><br>
+                </tr>
+                <tr>
+                    <td><label for="apellido">Apellido:</label></td>
+                    <td><input type="text" id="apellido" name="apellido"></td>
+                </tr>
+                <tr>
+                    <td><label for="run">Run:</label></td>
+                    <td><input type="text" id="run" name="run"></td>
+                </tr>
+                <tr>
+                    <td><label for="edad">Edad:</label></td>
+                    <td><input type="text" id="edad" name="edad"></td>
+                </tr>   
+                <tr>
+                    <td><label for="civil">Estado Civil:</label></td>
+                    <td>
+                        <select name="civil" id="civil">
+                            <option value="Casado">Casado</option>
+                            <option value="Viudo">Viudo</option>
+                            <option value="soltero">Soltero</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="sex">Sexo:</label></td>
+                    <td>
+                        <select name="sexo" id="sex">
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="locomo">Medio de Locomocion:</label></td>
+                    <td>
+                        <select name="locomocion" id="locomo">
+                            <option value="Auto">Auto</option>
+                            <option value="Moto">Moto</option>
+                            <option value="Micro">Micro</option>
+                            <option value="Metro">Metro</option>
+                            <option value="Taxi">Taxi</option>
+                        </select>
+                    </td>
+                </tr>
+            </table> 
+            <br>
+            <table>  
+                <tr>
+                    <td></td>
+                    <td><input type="submit" ></td>
+                </tr>
+            </table><br>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
