@@ -1,10 +1,12 @@
 var sumaPuntos=0;
 var contador=0;
-var intentos=0;
+var intentos = 0;
 
 function iniciarResultado(){
+
+
     if(verificaSeleccion()){
-        intentosPrueba();
+        
         if(sumaPuntos==5){
             puntajeTotal();
             desabilitaBoton();
@@ -42,7 +44,7 @@ function desabilitaBoton(){
 
 //cuenta intentos de rendir cuestionario
 function intentosPrueba(){
-    intentos=intentos+1;
+    intentos = intentos + 1;
 }
 
 //valida seleccion de los radio boton

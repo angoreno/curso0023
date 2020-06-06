@@ -7,9 +7,33 @@
     <link rel="stylesheet" href="ejercicio26.css">
 </head>
 <body>
+    <div class="contenedor">
+        <h1>Juego del Gato</h1>
+        <br><br>
+        <table class="tabla">
+            <tr>
+                <td id="1" onclick="marcar('1')"></td>
+                <td id="2" onclick="marcar('2')"></td>
+                <td id="3" onclick="marcar('3')"></td>
+            </tr>
+            <tr>
+                <td id="4" onclick="marcar('4')"></td>
+                <td id="5" onclick="marcar('5')"></td>
+                <td id="6" onclick="marcar('6')"></td>
+            </tr>
+            <tr>
+                <td id="7" onclick="marcar('7')"></td>
+                <td id="8" onclick="marcar('8')"></td>
+                <td id="9" onclick="marcar('9')"></td>
+            </tr>
+        </table>
+        <br><br>
+        <input type="submit" value="Reiniciar" id="reinicio" onclick="location.reload();" style="width: 200px; height: 30px; background: #6699FF; color: #ffffff; cursor: pointer; border: 0px;">
+
+    </div>
     
 
-<script src="ejercicio26.j"></script>    
+<script src="ejercicio26.js"></script>    
 </body>
 
 </html>
