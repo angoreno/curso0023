@@ -5,17 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 28</title>
+    <link rel="stylesheet" href="ejercicio28.css">
 </head>
 
-<body>
-    <div class="contenedor">
+<body >
+    <div class="contenedor" onmousemove="coordenadas(event)" onclick="escribirCoord()">
         <h1 id="titulo1">Coordenadas de ubicacion del Mouse</h1>
         <p id="parrafo">Mientras se mueve el mouse en la pantalla aparecera las coordenadas (x,y), al pinchar en el Mouse, se
             almacenara la informacion mostrandolo en una lista, finalmente para comenzar nuevamente presiones resetear
         </p>
-        <ul id="lista"></ul>
-    </div>
+        <label for="x">X: </label><input type="text" id="x"><br><br>
+        <label for="y">Y: </label><input type="text" id="y"><br><br>
 
+        <textarea name="" id="areatexto" cols="30" rows="10">
+            
+        </textarea>
+        <br><br>
+        
+        
+    </div>
+    <button onclick="reseteo()">Resetear</button>
+
+    <script src="ejercicio28.js"></script>
 </body>
 
 </html>
