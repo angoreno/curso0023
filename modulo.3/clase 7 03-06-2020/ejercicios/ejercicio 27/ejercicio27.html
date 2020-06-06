@@ -8,13 +8,15 @@
 <body>
     <div class="contenedor">
         <h1>Registro de Alumnos</h1>
-        <form action="">
-            <p>Nombre: <input type="text" name="" id="" minlength="5" size="40" maxlength="40"></p>
-            <p>Apellido: <input type="text" name="" id=""></p>
-            <!--fecha de nacimiento con calendario-->
-            <p>Fecha de Nacimiento: <input type="date" name="cumpleanios" step="1" min="1900-01-01" max="2020-07-01" value="2020-06-01"></p>
-            <p>Telefono: <input type="text" name="" id=""></p>
-            <!--nivel educacional campo de seleccion desplegable-->
+        <form action="" id="validaForm">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="" id="nombre" minlength="5" size="30" maxlength="30" onkeyup="validaNombre()" onblur="validaNombre()" required> 
+            <br><br>
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="" id="apellido" onkeyup="validaApellido()" onblur="validaApellido()" required>
+            <p>Fecha de Nacimiento: <input type="date" name="cumpleanios" step="1" min="1900-01-01" max="2020-07-01" value="2020-06-01" required></p>
+            <label for="telefono">Telefono: </label>
+            <input type="text" name="" id="telefono" onkeyup="validaTelefono()" onblur="validaTelefono()">
             <p>Nivel Educacional: <select name="nvEducacional" id="">
                 <option value="">Primero Basico</option>
                 <option value="">Segundo Basico</option>
@@ -29,9 +31,11 @@
                 <option value="">3° Medio</option>
                 <option value="">4° Medio</option>
             </select></p>
-            <p>Direccion: <input type="text" name="" id=""></p>
-            <p>Ciudad: <input type="text" name="" id=""></p>
-            <!--Region campo de seleccion desplegable-->
+            <label for="direccion">Direccion: </label>
+            <input type="text" name="" id="direccion" maxlength="100" onkeyup="validaDireccion()" onblur="validaDireccion()" required >
+            <br><br>
+            <label for="ciudad">Ciudad: </label>
+            <input type="text" name="" id="ciudad" maxlength="30" onkeyup="validaCiudad()" onblur="validaCiudad()"  required>
             <p>Region: <select name="" id="">
                 <option value="">I Region Arica y Prinacota</option>
                 <option value="">II Region Antofagasta</option>
@@ -47,10 +51,10 @@
                 <option value="">Region Metropolitana</option>
             </select></p>
             <br>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar" onclick="verificar()">
         </form>
 
     </div>
-    
+    <script src="ejercicio27.js"></script>
 </body>
 </html>
