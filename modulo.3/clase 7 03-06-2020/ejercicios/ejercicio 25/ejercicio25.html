@@ -12,18 +12,23 @@
             <h1>Change-Coins</h1>
             <p>Se debe ingresar el monto en pesos chilenos y seleccionar el tipo de moneda para realizar la conversion</p>
         </div><br>
-        <div class="error"></div><br>
-        <div class="confirm"></div><br>
+        <div class="error" id="error"></div><br>
+        <div class="confirm" id="confirm"></div><br>
         <div class="pesoChile">
-            <input type="text">
+            <input type="text" id="clp">
         </div><br>
         <div class="conversion">
-            <input type="text"> 
-        </div>
-        <div><br><br>
-            <input type="radio">1<input type="radio">2<input type="radio">3<input type="radio">4<input type="radio">5
+            <label  id="respuesta"></label> 
+        </div><br><br>
+        <div class="monedas" >
+            <p name="cambio" id="tpmoneda">Seleccione una moneda para realizar la convercion</p>
+            <p><input type="radio" name="cambio" value="PA"> Peso Argentino</p>  
+            <p><input type="radio" name="cambio" value="SP"> Sol Peruano</p>  
+            <p><input type="radio" name="cambio" value="BL"> Boliviano </p> 
+            <p><input type="radio" name="cambio" value="BV"> Bolivar Venezolano</p>  
+            <p><input type="radio" name="cambio" value="GH"> Gourde Haitiano </p> 
             <br><br>
-            <input type="submit">
+            <input type="submit" onclick="calculoDivisa()">
         </div>
         
     </div>
