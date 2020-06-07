@@ -1,0 +1,18 @@
+.contenedor{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#volatil{
+    width: 70px;
+    height: 60px;
+    background-color: chocolate;
+
+}
+.medio{
+    display: block;
+}
+.sub{
+    margin-top: 200px;
+    margin-left: -120px;
+}
