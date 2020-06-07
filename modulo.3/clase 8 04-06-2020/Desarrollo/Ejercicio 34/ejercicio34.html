@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 34</title>
+    <link rel="stylesheet" href="ejercicio34.css">
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Generador y clasificacion de numeros aleatorios</h1>
+        <p>Al generar  umero aleatorio se habilitan la opciones de clasificacion para seleccionar segun requerimiento.</p><br>
+
+    </header>
+    <dev class="numeros">
+        <label for="">Arreglo de numeros aleatorios</label><br>
+        <input type="text" id="in1" size="50"><br><br>
+        <label for="">Arreglo solo con numeros impares</label><br>
+        <input type="text" id="in2" size="50"><br><br>
+        <label for="">Arreglo solo con numeros pares</label><br>
+        <input type="text" id="in3" size="50"><br><br>
+        <label for="">Arreglo solo con numeros primos</label><br>
+        <input type="text" id="in4" size="50"><br><br>
+        <label for="">Arreglo solo numeros compuestos</label><br>
+        <input type="text" id="in5" size="50"><br><br>
+        
+
+    </dev>
+    <div class="contenedor">
+        <label for="">Seleccione la opcion para obtener los numeros</label><br><br>
+        <button id="btn1" onclick="numeroAleatorio()">Aleatorios</button>
+        <button id="btn2" onclick="numeroPar()" style="display: none;">Pares</button>
+        <button id="btn3" onclick="numeroImpar()" style="display: none;">Impares</button>
+        <button id="btn4" onclick="numeroPrimo()" style="display: none;">Primos</button>
+        <button id="btn5" onclick="numeroCompuesto()" style="display: none;">Compuestos</button>
+    </div>
+    
+</body>
+<script src="ejercicio34.js"></script>
+</html>
