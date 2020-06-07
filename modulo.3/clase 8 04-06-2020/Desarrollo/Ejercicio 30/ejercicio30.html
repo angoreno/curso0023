@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 30</title>
+    <link rel="stylesheet" href="ejercicio30.css">
+    <script src="jquery-3.5.1.min.js" ></script>
+    <script>
+
+        $(document).ready(function(){
+		
+            $("#parrafo1").click(function() {
+                $('#parrafo1').hide(1000); //oculto mediante id  
+            });
+            
+            $("#parrafo2").click(function() {
+                $('#parrafo2').hide(1000); //oculto mediante id  
+            });
+            
+            $("#reset").click(function() {
+                $('#parrafo1').show(1000); //oculto mediante id  
+                $('#parrafo2').show(1000); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Ejemplo JQuery ocultar parrafo</h1>
+        <p id="parrafo1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem consequatur amet, aut aliquam beatae ut iste sequi totam et provident, culpa placeat facere quia, similique quidem delectus iure non quas!
+        Mollitia aliquam esse temporibus quaerat quis dolores tempora neque, fugiat, accusantium quam placeat hic eius provident maxime. Libero, corporis nostrum at dolorem officia error iste hic molestias reiciendis cum ipsum?
+        Nisi, minima deserunt, tenetur quaerat distinctio perferendis natus, laudantium dolor illo illum magnam inventore quod dolore debitis ab labore magni! Deleniti blanditiis nobis numquam magni laboriosam voluptatem quo dignissimos molestiae!
+        Corrupti, veritatis sint iure beatae eos earum. Deserunt cumque natus laudantium similique molestias blanditiis veniam repudiandae ducimus totam officiis. Sequi nam iusto facere quos reiciendis numquam sit ullam necessitatibus repudiandae?
+        Eos sint quis perferendis, aspernatur at nulla voluptatum animi minus sapiente ipsam eveniet molestiae beatae labore quas odio laboriosam cumque nihil quaerat rerum. Illum nemo aliquam suscipit asperiores enim quod.</p>
+        <br>
+        <p id="parrafo2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, repellat. Reprehenderit ad error minima libero dolorum non hic veniam dolorem quo, magni nulla optio sit fugit quaerat est ipsum nisi!
+        Ipsa necessitatibus ratione pariatur fugiat unde odit vitae corrupti enim nostrum. Ipsum dolorem voluptatem, itaque numquam ducimus omnis incidunt voluptates ex vitae iusto commodi provident sed fugit explicabo id accusamus.
+        Quasi velit sint quidem earum, tempora dignissimos reprehenderit illum facere rerum natus! Porro optio amet delectus ipsam maiores, laudantium ab tempore distinctio? Qui dignissimos, cum accusamus voluptatem nam tempora eaque.
+        Ea ad quisquam esse sed ipsum at architecto dolore, veritatis laborum nobis alias. Quidem pariatur corrupti non perspiciatis recusandae earum omnis explicabo accusamus optio, tempora ipsum repellendus quisquam in tempore.
+        Veniam, cupiditate. Praesentium vero molestiae beatae illo quasi voluptatum nemo placeat, explicabo temporibus autem mollitia aut quisquam in odit minus numquam maiores cumque similique quos quia error iste qui illum!</p>
+    </div>
+    <button id="reset">Resetear</button>
+    
+</body>
+</html>
