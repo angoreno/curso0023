@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 41</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/slidebars.min.css">
+    <style>
+        .menu{
+            width: 300px;
+            margin: auto;
+        }
+        [off-canvas] ul.menu {
+            margin: 0;
+            padding: 0;
+            display: block;
+            list-style: none;
+        }
+        h2, small{
+            font-size: 100%;
+            text-align: center;
+            color: #fff;
+        }
+        .small, small {
+            font-size: 85%;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        li {
+            display: list-item;
+            text-align: center;
+            color: #fff;
+        }
+        li a{
+            color: #fff; 
+        }
+    </style>
+</head>
+<body>
+    
+    <div canvas="container">
+        <div class="menu small">
+            <h1>Ejercicio 41</h1>
+            <img src="img6.jpg" alt="" style="width: 400px;">
+            <button id="btn">Toggle</button>
+
+        </div>
+        
+
+        <div off-canvas="slider1 left overlay"> 
+            <br><h2>Menu</h2><br><br>
+            <ul class="menu">
+                <li><a href="https://jprogramadores.biblioredes.gob.cl/" target="_blank">Programadores</a></li>
+                <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+                <li><a href="https://github.com/" target="_blank">Github</a></li>
+                <li><a href="https://nodovirtual.awakelab.cl/" target="_blank">Nodovirtual</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <script src="js/slidebars.min.js"></script>
+    <script>
+        ( function ($) {
+          // Initialize Slidebars
+          var controller = new slidebars();
+          controller.init();
+          $('#btn').on( 'click', function (event) {
+            // Stop default action and bubbling
+            event.stopPropagation();
+            event.preventDefault();
+            // Toggle the Slidebar with id 'id-1'
+            controller.toggle('slider1');
+            } );
+        } ) ( jQuery );
+
+        
+
+      </script>
+</body>
+</html>
