@@ -6,18 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 40</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="//resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-          $( "#accordion" ).accordion();
-        } );
-        $( function() {
-            $( "#resizable" ).resizable();
-        } );
-        </script>
-        
+    <link rel="stylesheet" href="//resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -68,7 +59,28 @@
         </div>
 
     </div>
+    <button id="dialogo">Dialogo</button>
+    <div id="dialog" title="Basic dialog" style="display: none;">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit eveniet laboriosam
+            consequuntur aut cupiditate, dolorem totam, libero minima quo eligendi at tempore quod reiciendis rerum
+            quibusdam vero, consequatur nobis.Nisi laboriosam, eos quibusdam eligendi soluta distinctio laudantium
+            blanditiis voluptas recusandae laborum fugiat, sint libero beatae repudiandae esse illum ipsa dicta quaerat
+            adipisci alias. Molestiae minus blanditiis cum! Dicta, quaerat.</p>
 
+    </div>
+<script>
+     $(function () {
+        $("#accordion").accordion();
+    });
+    $(function () {
+        $("#resizable").resizable();
+    });
+     $("#dialogo").on('click',function(){
+        $(function(){
+            $("#dialog").dialog();
+        });
+    });
+</script>
 </body>
 
 </html>
