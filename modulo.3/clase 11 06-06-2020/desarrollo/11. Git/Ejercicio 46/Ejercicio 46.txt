@@ -1,0 +1,154 @@
+Alumno@NADL-246 MINGW64 ~
+$ cd "C:\Users\Alumno\Desktop\Full Stack\Curso Full Stack Java\Module 3\11. Git\Ejercicio 45\fullstackjava"
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ du -u
+du: unknown option -- u
+Try 'du --help' for more information.
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ du -s
+84      .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git ls -a
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ ls -a
+ ./   ../   .git/   contenido.txt  'Ejercicio 45.txt'
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git status -s
+?? Ejercicio 45.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m
+error: switch `m' requires a value
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Nuevo archivo"
+[master a544024] Nuevo archivo
+ 1 file changed, 140 insertions(+)
+ create mode 100644 Ejercicio 45.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ ls -a
+ ./   ../   .git/   contenido.txt  'Ejercicio 45.txt'
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ ls -als
+total 21
+4 drwxr-xr-x 1 Alumno 197121    0 jun. 12 16:40  ./
+4 drwxr-xr-x 1 Alumno 197121    0 jun. 12 16:41  ../
+4 drwxr-xr-x 1 Alumno 197121    0 jun. 12 16:46  .git/
+1 -rw-r--r-- 1 Alumno 197121  196 jun. 12 16:38  contenido.txt
+8 -rw-r--r-- 1 Alumno 197121 6228 jun. 12 16:40 'Ejercicio 45.txt'
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Delete file"
+[master 502d6b3] Delete file
+ 1 file changed, 140 deletions(-)
+ delete mode 100644 Ejercicio 45.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Nueva carpeta y archivo"
+[master db497c0] Nueva carpeta y archivo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Modulos/modulo1.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git log --oneline
+db497c0 (HEAD -> master) Nueva carpeta y archivo
+502d6b3 Delete file
+a544024 Nuevo archivo
+aa91735 Versión actualizada del contenido
+5d91919 Primera versión del temario subida al repositorio
+4efb7ff Primera version del temario subida al repositorio
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m “Agregada la
+error: pathspec 'la' did not match any file(s) known to git
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit .m "Agregada la información del modulo 2"
+error: pathspec '.m' did not match any file(s) known to git
+error: pathspec 'Agregada la información del modulo 2' did not match any file(s) known to git
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Agregada la información del modulo 2"
+[master 3898062] Agregada la información del modulo 2
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Modulos/modulo2.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m
+error: switch `m' requires a value
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Añadido el material del modulo 3"
+[master 0fb04c4] Añadido el material del modulo 3
+ 1 file changed, 2 insertions(+)
+ create mode 100644 Modulos/modulo3.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Temario del curso completo"
+[master 1181862] Temario del curso completo
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ ls -als
+total 13
+4 drwxr-xr-x 1 Alumno 197121   0 jun. 12 16:49 ./
+4 drwxr-xr-x 1 Alumno 197121   0 jun. 12 16:48 ../
+4 drwxr-xr-x 1 Alumno 197121   0 jun. 12 16:54 .git/
+1 -rw-r--r-- 1 Alumno 197121 260 jun. 12 16:54 contenido.txt
+0 drwxr-xr-x 1 Alumno 197121   0 jun. 12 16:53 Modulos/
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ cd "C:\Users\Alumno\Desktop\Full Stack\Curso Full Stack Java\Module 3\11. Git\Ejercicio 45\fullstackjava\Modulos"
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava/Modulos (master)
+$ ls -als
+total 7
+0 drwxr-xr-x 1 Alumno 197121   0 jun. 12 16:53 ./
+4 drwxr-xr-x 1 Alumno 197121   0 jun. 12 16:49 ../
+1 -rw-r--r-- 1 Alumno 197121  87 jun. 12 16:50 modulo1.txt
+1 -rw-r--r-- 1 Alumno 197121 114 jun. 12 16:51 modulo2.txt
+1 -rw-r--r-- 1 Alumno 197121 126 jun. 12 16:53 modulo3.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava/Modulos (master)
+$ git log --oneline
+1181862 (HEAD -> master) Temario del curso completo
+0fb04c4 Añadido el material del modulo 3
+3898062 Agregada la información del modulo 2
+db497c0 Nueva carpeta y archivo
+502d6b3 Delete file
+a544024 Nuevo archivo
+aa91735 Versión actualizada del contenido
+5d91919 Primera versión del temario subida al repositorio
+4efb7ff Primera version del temario subida al repositorio
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava/Modulos (master)
+$

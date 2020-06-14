@@ -1,0 +1,32 @@
+https://github.com/angoreno/clase11.git
+
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (awakers)
+$ git branch -l
+* awakers
+  master
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (awakers)
+$ ^C
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (awakers)
+$ git checkout master
+Switched to branch 'master'
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git remote add origin https://github.com/angoreno/clase11.git
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git push origin master
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (27/27), done.
+Writing objects: 100% (32/32), 4.14 KiB | 1.03 MiB/s, done.
+Total 32 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/angoreno/clase11.git
+ * [new branch]      master -> master
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$

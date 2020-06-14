@@ -1,0 +1,140 @@
+
+Alumno@NADL-246 MINGW64 ~
+$ pwd
+/c/Users/Alumno
+
+Alumno@NADL-246 MINGW64 ~
+$ cd "C:\Users\Alumno\Desktop\Full Stack\Curso Full Stack Java\Module 3\11. Git\Ejercicio 45"
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45
+$ cd /fullstackjava
+bash: cd: /fullstackjava: No such file or directory
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45
+$ cd "/fullstackjava"
+bash: cd: /fullstackjava: No such file or directory
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45
+$ cd "C:\Users\Alumno\Desktop\Full Stack\Curso Full Stack Java\Module 3\11. Git\Ejercicio 45\fullstackjava"
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava
+$ git init
+Initialized empty Git repository in C:/Users/Alumno/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava/.git/
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git status -s
+?? contenido.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ du -s *
+0       contenido.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Primera version del temario subida al repositorio"
+[master (root-commit) 4efb7ff] Primera version del temario subida al repositorio
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 contenido.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git remote add origin^C
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git remote add origin /Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git status -s
+ M contenido.txt
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git push -u origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Primera versión del temario subida al repositorio"
+[master 5d91919] Primera versión del temario subida al repositorio
+ 1 file changed, 3 insertions(+)
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git status -s
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git log --oneline
+5d91919 (HEAD -> master) Primera versión del temario subida al repositorio
+4efb7ff Primera version del temario subida al repositorio
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   contenido.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git add .
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git commit -m "Versión actualizada del contenido"
+[master aa91735] Versión actualizada del contenido
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$ git log --oneline
+aa91735 (HEAD -> master) Versión actualizada del contenido
+5d91919 Primera versión del temario subida al repositorio
+4efb7ff Primera version del temario subida al repositorio
+
+Alumno@NADL-246 MINGW64 ~/Desktop/Full Stack/Curso Full Stack Java/Module 3/11. Git/Ejercicio 45/fullstackjava (master)
+$
