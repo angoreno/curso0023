@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 42</title>
-</head>
-<body>
+    <link rel="stylesheet" href="css/ejercicio42.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div id="mover">
+        <h1>Ejercicio 42</h1>
+    </div>
+    
+
+    <div id="tabla">
+        <ul>
+            <li><a href="#tabla1">Tabla 1</a></li>
+            <li><a href="#tabla2">Tabla 2</a></li>
+            <li><a href="#tabla3">Tabla 3</a></li>
+            <li><a href="#tabla4">Tabla 4</a></li>
+        </ul>
+        <div class="ui-tabs-1" id="tabla1" tabindex="0">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos fugit voluptatibus, architecto ad iusto
+                corrupti eius, placeat laborum eos fuga ipsam praesentium incidunt expedita ratione labore iste optio.
+                Sint, ipsa.</p>
+        </div>
+        <div class="tabla2" id="tabla2" tabindex="2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut atque laborum. Minus ipsam ad unde
+                facilis nisi adipisci, enim placeat debitis nulla repellendus voluptatem doloremque consequuntur
+                assumenda, laborum a?</p>
+        </div>
+        <div class="tabla3" id="tabla3" tabindex="3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo impedit, consequatur ab dolores
+                earum blanditiis fugit omnis iusto optio eos praesentium corporis commodi vitae quis tempora temporibus
+                beatae maiores!</p>
+        </div>
+        <div class="tabla4" id="tabla4" tabindex="4">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi necessitatibus, vero dolore sed maxime
+                libero perspiciatis incidunt voluptate excepturi at repellat maiores quidem, aliquid illum voluptates?
+                Expedita eius laborum quas!</p>
+        </div>
+    </div>
+    <div class="calificacion">
+        <fieldset>
+            <label for="nota">Seleccionar calificacion</label>
+            <select name="nota" id="nota">
+                <option value="Horrible">Horrible</option>
+                <option value="Malo">Malo</option>
+                <option value="Mediocre">Mediocre</option>
+                <option value="Bueno" selected="selected">Bueno</option>
+                <option value="Excelente">Excelente</option>
+            </select>
+            <button id="btn">Calificar</button>
+        </fieldset>
+        
+    </div>
+
+
+    <script src="js/ejercicio42.js"></script>
 </body>
+
 </html>
