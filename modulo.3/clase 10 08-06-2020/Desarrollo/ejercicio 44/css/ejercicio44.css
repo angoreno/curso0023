@@ -1,0 +1,12 @@
+
+#tabla thead tr th{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+#tabla tbody tr td{
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+iframe{
+    display: none;
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 44</title>
+    <link rel="stylesheet" href="css/ejercicio44.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/TableExport/3.3.13/css/tableexport.css">
+    
+</head>
+<body>
+    <h1>Ejercicio 44 Registro de empleados</h1>
+    <div class="tabla">
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Correo electronico</th>
+                    <th>Edad</th>
+                    <th>Telefono</th>
+                </tr>
+                <tbody class="cuerpo">
+
+                </tbody>
+            </thead>
+            
+        </table><br><br>
+        <button class="xlsx" id="btnxlsx">Exportar a xlsx</button>
+        <button class="csv" id="btncsv">Exportar a csv</button>
+        <button class="txt" id="btntxt">Exportar a txt</button>
+    </div><br><br>
+    <div class="formulario">
+        <form target="frame" id="formulario">
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre" name="nombre">
+                    </td>
+                    <td>
+                        <label for="apellido">Apellido</label><br>
+                        <input type="text" id="apellido" name="apellido">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="correo">Correo Electronico</label><br>
+                        <input type="email" id="correo" name="correo">
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="edad">Edad</label><br>
+                        <input type="text" id="edad" name="edad">
+                    </td>
+                    <td>
+                        <label for="telefono">Telefono</label><br>
+                        <input type="text" id="telefono" name="telefono">
+                    </td>
+                </tr>
+            </table><br>
+            <button id="anadir">Añadir</button>
+        </form>
+    </div>
+    <iframe name="frame"></iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TableExport/3.3.13/js/tableexport.min.js"></script>
+    <script src="js/FileSaver.js"></script>
+ <script src="js/ejercicio44.js"></script>   
+</body>
+</html>
